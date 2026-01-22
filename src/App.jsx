@@ -7,44 +7,39 @@ export default function App() {
 
   const subjectToppers = [
     {
-      name: "Priya Sharma",
-      subject: "Mathematics",
-      score: "99%",
+      name: "Unnati",
+      subject: "Biology",
+      score: "94%",
       class: "Class XII - Science",
       image: "/Images/12.jpg",
-      gradient: "from-yellow-300 to-orange-400",
     },
     {
-      name: "Arjun Patel",
-      subject: "Physics",
-      score: "98%",
+      name: "Yash",
+      subject: "Maths",
+      score: "100%",
       class: "Class XII - Science",
       image: "/Images/9.jpg",
-      gradient: "from-blue-300 to-indigo-400",
     },
     {
-      name: "Ananya Singh",
-      subject: "Biology",
-      score: "99%",
-      class: "Class XII - Science",
+      name: "Vishal",
+      subject: "Accounts",
+      score: "95%",
+      class: "Class XII - Commerce",
       image: "/Images/10.jpg",
-      gradient: "from-green-300 to-teal-400",
     },
     {
-      name: "Rohit Mehta",
-      subject: "Chemistry",
-      score: "97%",
+      name: "Sparsh",
+      subject: "Physics",
+      score: "95%",
       class: "Class XII - Science",
       image: "/Images/7.jpg",
-      gradient: "from-purple-300 to-pink-400",
     },
     {
-      name: "Sneha Verma",
-      subject: "Accounts",
-      score: "98%",
+      name: "Tushar",
+      subject: "Economics",
+      score: "100%",
       class: "Class XII - Commerce",
       image: "/Images/8.jpg",
-      gradient: "from-rose-300 to-red-400",
     },
   ];
 
@@ -213,9 +208,9 @@ export default function App() {
       {/* Founder Section */}
       <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div className="relative w-[450px] mx-auto">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl transform rotate-3"></div>
-            <div className="relative h-[500px] bg-gradient-to-br from-orange-300 to-orange-500 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[450px] bg-gradient-to-br from-orange-300 to-orange-500 rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src="/Images/11.jpg" // update path as needed
                 alt="Founder - Mr. Jitendra Sharma"
@@ -229,7 +224,7 @@ export default function App() {
               A Visionary in Education
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-              Founded in 2006 by Dr. Jitendra Sharma, CPCI Classes began with a simple yet powerful vision: to create an educational environment where every child could discover their unique potential and develop into confident, compassionate leaders.
+              Founded in 2006 by Jitendra Singh, CPCI Classes began with a simple yet powerful vision: to create an educational environment where every child could discover their unique potential and develop into confident, compassionate leaders.
             </p>
             <div className="space-y-4">
               <div className="flex items-start">
@@ -380,21 +375,24 @@ export default function App() {
               className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2"
             >
               {/* Image */}
-              <div
-                className={`relative h-64 bg-gradient-to-br ${topper.gradient}`}
-              >
-                <img
-                  src={topper.image}
-                  alt={topper.name}
-                  className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
-                />
+              
+<div className="relative h-64">
+  <img
+    src={topper.image}
+    alt={topper.name}
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-                <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-xl shadow">
-                  <p className="text-sm font-semibold text-gray-700">
-                    {topper.subject}
-                  </p>
-                </div>
-              </div>
+  {/* subtle dark overlay */}
+  <div className="absolute inset-0 bg-black/10"></div>
+
+  <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-xl shadow">
+    <p className="text-sm font-semibold text-gray-700">
+      {topper.subject}
+    </p>
+  </div>
+</div>
+
 
               {/* Content */}
               <div className="p-6 text-center bg-gradient-to-br from-orange-50 to-white">
@@ -520,6 +518,71 @@ export default function App() {
 
   <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
     {/* Team Member 1 */}
+
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+      <div className="h-56 bg-gradient-to-br from-orange-400 to-red-400 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src="/Images/11.jpg" alt="Team Member 3" className="object-cover" />
+        </div>
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+          Jitendra Sir - Maths Instructor
+        </h4>
+        <p className="text-gray-600 mb-4">
+          Sarah’s creative approach to teaching language arts fosters a love for reading and writing in every student she works with.
+        </p>
+      </div>
+    </div>
+    
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+      <div className="h-56 bg-gradient-to-br from-blue-300 to-blue-500 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src="/Images/4.jpg" alt="Team Member 4" className="object-cover" />
+        </div>
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+          Sheel Sir - Accounts Instructor
+        </h4>
+        <p className="text-gray-600 mb-4">
+          Sheel sir uses real-world events and critical thinking exercises to help students understand the past and its impact on today’s world.
+        </p>
+      </div>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+      <div className="h-56 bg-gradient-to-br from-green-300 to-green-500 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src="/Images/5.jpg" alt="Team Member 5" className="object-cover" />
+        </div>
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+          Praveen Sir - Physics and Chemistry Instructor
+        </h4>
+        <p className="text-gray-600 mb-4">
+          Lisa has a passion for chemistry that she shares with students through hands-on experiments and engaging classroom activities.
+        </p>
+      </div>
+    </div>
+
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
+      <div className="h-56 bg-gradient-to-br from-purple-300 to-purple-500 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src="/Images/6.jpg" alt="Team Member 6" className="object-cover" />
+        </div>
+      </div>
+      <div className="p-6">
+        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
+          Ashwani Sir - Economics Instructor
+        </h4>
+        <p className="text-gray-600 mb-4">
+          Tom brings history to life with immersive storytelling and a focus on the cultural and political aspects of world events.
+        </p>
+      </div>
+    </div>
+
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
       <div className="h-56 bg-gradient-to-br from-orange-300 to-orange-500 relative overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
@@ -528,7 +591,7 @@ export default function App() {
       </div>
       <div className="p-6">
         <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          Jane Doe - Lead STEM Instructor
+          Ashima - Social Studies Instructor
         </h4>
         <p className="text-gray-600 mb-4">
           With over 10 years of teaching experience, Jane brings a passion for science and technology to the classroom, inspiring the next generation of innovators.
@@ -545,10 +608,10 @@ export default function App() {
       </div>
       <div className="p-6">
         <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          John Smith - Math Instructor
+          Yash Sir - Biology Instructor
         </h4>
         <p className="text-gray-600 mb-4">
-          John has a knack for making complex math concepts easy to understand and engaging. His teaching style ensures every student excels.
+          Yash has a knack for making complex biology concepts easy to understand and engaging. His teaching style ensures every student excels.
         </p>
       </div>
     </div>
@@ -562,7 +625,7 @@ export default function App() {
       </div>
       <div className="p-6">
         <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          Sarah Lee - Language Arts Instructor
+          Shikha Ma'am - Science Instructor (IX-X) 
         </h4>
         <p className="text-gray-600 mb-4">
           Sarah’s creative approach to teaching language arts fosters a love for reading and writing in every student she works with.
@@ -571,55 +634,10 @@ export default function App() {
     </div>
 
     {/* Team Member 4 */}
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
-      <div className="h-56 bg-gradient-to-br from-blue-300 to-blue-500 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img src="/Images/4.jpg" alt="Team Member 4" className="object-cover" />
-        </div>
-      </div>
-      <div className="p-6">
-        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          Mark Johnson - Social Studies Instructor
-        </h4>
-        <p className="text-gray-600 mb-4">
-          Mark uses real-world events and critical thinking exercises to help students understand the past and its impact on today’s world.
-        </p>
-      </div>
-    </div>
-
+    
     {/* Team Member 5 */}
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
-      <div className="h-56 bg-gradient-to-br from-green-300 to-green-500 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img src="/Images/5.jpg" alt="Team Member 5" className="object-cover" />
-        </div>
-      </div>
-      <div className="p-6">
-        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          Lisa White - Chemistry Instructor
-        </h4>
-        <p className="text-gray-600 mb-4">
-          Lisa has a passion for chemistry that she shares with students through hands-on experiments and engaging classroom activities.
-        </p>
-      </div>
-    </div>
-
+    
     {/* Team Member 6 */}
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
-      <div className="h-56 bg-gradient-to-br from-purple-300 to-purple-500 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img src="/Images/6.jpg" alt="Team Member 6" className="object-cover" />
-        </div>
-      </div>
-      <div className="p-6">
-        <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3">
-          Tom Clark - History Instructor
-        </h4>
-        <p className="text-gray-600 mb-4">
-          Tom brings history to life with immersive storytelling and a focus on the cultural and political aspects of world events.
-        </p>
-      </div>
-    </div>
 
   </div>
 </section>
@@ -675,8 +693,7 @@ export default function App() {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h4 className="font-bold text-gray-900 mb-4">Office Hours</h4>
                 <div className="space-y-2 text-gray-600">
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
+                  <p>Monday - Saturday: 11:00 AM - 9:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
               </div>
