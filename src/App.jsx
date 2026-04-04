@@ -16,16 +16,7 @@ export default function App() {
     { name: "Vishal", subject: "Accounts", score: "95%", class: "Class XII - Commerce", image: "/Images/10.jpg" },
     { name: "Sparsh", subject: "Physics", score: "95%", class: "Class XII - Science", image: "/Images/7.jpg" },
     { name: "Tushar", subject: "Economics", score: "100%", class: "Class XII - Commerce", image: "/Images/8.jpg" },
-    { name: "Ananya", subject: "Chemistry", score: "97%", class: "Class XII - Science", image: "/Images/12.jpg" },
-    { name: "Rohan", subject: "Maths", score: "99%", class: "Class XI - Science", image: "/Images/9.jpg" },
-    { name: "Priya", subject: "Biology", score: "96%", class: "Class XI - Science", image: "/Images/12.jpg" },
-    { name: "Arjun", subject: "Physics", score: "98%", class: "Class XI - Science", image: "/Images/7.jpg" },
-    { name: "Sneha", subject: "Accounts", score: "100%", class: "Class XI - Commerce", image: "/Images/10.jpg" },
-    { name: "Kavya", subject: "Economics", score: "95%", class: "Class XI - Commerce", image: "/Images/8.jpg" },
-    { name: "Rahul", subject: "Chemistry", score: "93%", class: "Class X", image: "/Images/9.jpg" },
-    { name: "Divya", subject: "Maths", score: "100%", class: "Class X", image: "/Images/12.jpg" },
-    { name: "Aman", subject: "Science", score: "97%", class: "Class IX", image: "/Images/7.jpg" },
-    { name: "Pooja", subject: "Maths", score: "99%", class: "Class IX", image: "/Images/10.jpg" },
+    
   ];
 
   const allToppers = [...subjectToppers, ...subjectToppers];
@@ -102,7 +93,7 @@ export default function App() {
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">Contact</a>
             </div>
             <button className="hidden md:block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105">
-              Enroll Now
+              <a href="https://cpci-management-ie0319ax4-nishevs-projects-4aafacdd.vercel.app">Admin</a>
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -119,7 +110,7 @@ export default function App() {
                 <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-orange-500 transition-colors font-medium py-2">Testimonials</a>
                 <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-orange-500 transition-colors font-medium py-2">Contact</a>
                 <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all mt-2">
-                  Enroll Now
+                  <a href="https://cpci-management-ie0319ax4-nishevs-projects-4aafacdd.vercel.app">Admin</a>
                 </button>
               </div>
             </div>
