@@ -93,7 +93,7 @@ export default function App() {
               <a href="#contact" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">Contact</a>
             </div>
             <button className="hidden md:block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all transform hover:scale-105">
-              <a href="https://cpci-management-ie0319ax4-nishevs-projects-4aafacdd.vercel.app">Admin</a>
+              <a href="https://cpci-management-app.vercel.app/login">Admin</a>
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -110,7 +110,7 @@ export default function App() {
                 <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-orange-500 transition-colors font-medium py-2">Testimonials</a>
                 <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-gray-700 hover:text-orange-500 transition-colors font-medium py-2">Contact</a>
                 <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all mt-2">
-                  <a href="https://cpci-management-ie0319ax4-nishevs-projects-4aafacdd.vercel.app">Admin</a>
+                  <a href="https://cpci-management-app.vercel.app/login">Admin</a>
                 </button>
               </div>
             </div>
